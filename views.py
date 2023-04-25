@@ -19,6 +19,21 @@ def profile():
     return render_template("profile.html")
 
 
+@views.route("/first-module")
+def first_module():
+    return render_template("firstmodule.html")
+
+
+@views.route("/second-module")
+def second_module():
+    return render_template("secondmodule.html")
+
+
+@views.route("/third-module")
+def third_module():
+    return render_template("thirdmodule.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'timmy', 'kakaya-to wlyapa': 10})
